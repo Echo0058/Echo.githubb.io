@@ -1,7 +1,7 @@
 # MySQL
 ## Day 1 —— 环境搭建和初识数据库
-｜参考教程链接：https://linklearner.com/learn/detail/70
-｜环境搭建简易参考上述链接，针对windows，macOS和linux均有说明，且易上手
+> 参考教程链接：https://linklearner.com/learn/detail/70
+> 环境搭建简易参考上述链接，针对windows，macOS和linux均有说明，且易上手
 
 * 数据库 DataBase(DB)
 * 数据库管理系统（Database Management System，DBMS）—— 管理数据库的计算机系统
@@ -16,7 +16,7 @@
  
 * RDBMS的常见系统结构
 ![image](https://github.com/Echo0058/Echo0058.github.io/assets/105284489/95ada82e-bd21-412d-bb56-b7bb1d143370)
-｜ref：https://github.com/datawhalechina/wonderful-sql/blob/main/img/ch01/ch01.01%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84.jpg
+>ref：https://github.com/datawhalechina/wonderful-sql/blob/main/img/ch01/ch01.01%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84.jpg
 
 数据库存储的表结构类似于excel中的行与列
 行：记录 
@@ -24,7 +24,7 @@
 单元格，一个单元格只能输入一条记录
 SQL是为操作数据库而开发的语言
 
-｜“完全基于标准 SQL 的 RDBMS 很少，通常需要根据不同的 RDBMS 来编写特定的 SQL 语句，原则上，本课程介绍的是标准 SQL 的书写方式。”
+>“完全基于标准 SQL 的 RDBMS 很少，通常需要根据不同的 RDBMS 来编写特定的 SQL 语句，原则上，本课程介绍的是标准 SQL 的书写方式。”
 
 SQL 语句
 -------
@@ -90,7 +90,7 @@ CREATE TABLE product
  PRIMARY KEY (product_id));
 ```
 ![image](https://github.com/Echo0058/Echo0058.github.io/assets/105284489/cc296e00-a31e-48e5-8728-cb31a90efe46)
-｜ref：https://github.com/datawhalechina/wonderful-sql/raw/main/img/ch01/ch01.03%E5%95%86%E5%93%81%E8%A1%A8%E5%92%8C%E5%88%97%E5%90%8D%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png
+>ref：https://github.com/datawhalechina/wonderful-sql/raw/main/img/ch01/ch01.03%E5%95%86%E5%93%81%E8%A1%A8%E5%92%8C%E5%88%97%E5%90%8D%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png
 
 **命名规则**
 * 只能使用半角英文字母、数字、下划线（_）作为数据库、表和列的名称
@@ -172,7 +172,7 @@ UPDATE product
  WHERE product_id = '0008';  
 ```
 
-｜和 INSERT 语句一样， UPDATE 语句也可以将 NULL 作为一个值来使用。 **但是，只有未设置 NOT NULL 约束和主键约束的列才可以清空为NULL。**如果将设置了上述约束的列更新为 NULL，就会出错，这点与INSERT 语句相同。
+>和 INSERT 语句一样， UPDATE 语句也可以将 NULL 作为一个值来使用。 **但是，只有未设置 NOT NULL 约束和主键约束的列才可以清空为NULL。**如果将设置了上述约束的列更新为 NULL，就会出错，这点与INSERT 语句相同。
 
 **多列更新——UPDATE 语句的 SET 子句支持同时将多个列作为更新对象。**
 ```sql
@@ -193,7 +193,7 @@ UPDATE product
  WHERE product_type = '厨房用具';  
 ```
 
-｜SET 子句中的列不仅可以是两列，还可以是三列或者更多。
+>SET 子句中的列不仅可以是两列，还可以是三列或者更多。
 
 
  * 插入数据 —— INSERT
@@ -320,8 +320,12 @@ SELECT * FROM article WHERE MATCH (col1，col2，...) AGAINST (expr [ search _ m
 
 3. 填空题
 请补充如下 SQL 语句来删除 Addressbook 表。
+
 (DROP) table Addressbook;
+
 或者 TRUNCATE TABLE TABLE_NAME;
-5. 判断题
+4. 判断题
+
 是否可以编写 SQL 语句来恢复删除掉的 Addressbook 表？
+
 否，删除操作不能恢复   
